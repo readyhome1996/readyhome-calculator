@@ -12,6 +12,7 @@ export interface ItemData {
 export interface CalculationResult {
   itemId: string;
   itemName: string;
+  imageUrl: string;
   availableDays: number;
   exhaustionDate: Date;
 }
