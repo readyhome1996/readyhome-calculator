@@ -1,7 +1,7 @@
 
 import React, { useState, useMemo, useCallback } from 'react';
-import { ItemData, CalculationResult } from './types';
-import { INITIAL_ITEMS, BRAND_NAME, STORE_URL, KOREAN_HOLIDAYS, COLORS } from './constants';
+import { ItemData, CalculationResult } from './types.ts';
+import { INITIAL_ITEMS, BRAND_NAME, STORE_URL, KOREAN_HOLIDAYS, COLORS } from './constants.ts';
 
 type Step = 'landing' | 'input' | 'result';
 
@@ -154,10 +154,9 @@ export default function App() {
     <div className="flex flex-col items-center text-center px-4 animate-fadeIn min-h-[80vh] justify-center">
       <div className="w-full max-w-md mb-10 rounded-[3rem] overflow-hidden shadow-2xl bg-gray-200 aspect-[2.5/1]">
         <img 
-          src="./assets/main-banner.jpg" 
+          src="https://images.unsplash.com/photo-1581056316607-a662829cde8b?auto=format&fit=crop&q=80&w=1200&h=480" 
           alt="레디홈" 
           className="w-full h-full object-cover"
-          onError={(e) => { (e.target as HTMLImageElement).src = 'https://via.placeholder.com/1200x480?text=READYHOME'; }}
         />
       </div>
       <div className="mb-6 flex items-center space-x-2">

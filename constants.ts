@@ -1,5 +1,5 @@
 
-import { ItemData } from './types';
+import { ItemData } from './types.ts';
 
 export const COLORS = {
   primary: '#2563EB', // 레디홈 메인 블루
@@ -10,6 +10,8 @@ export const COLORS = {
 export const BRAND_NAME = "레디홈 (ReadyHome)";
 export const STORE_URL = "https://readyhome.co.kr";
 
+// 깃허브 업로드 전, 실제 이미지가 없어도 동작하도록 Unsplash 샘플 이미지를 연결했습니다.
+// 나중에 assets 폴더에 실제 파일을 넣으실 때 파일명을 맞춰주세요.
 export const INITIAL_ITEMS: ItemData[] = [
   { 
     id: 'diaper-outer', 
@@ -18,7 +20,7 @@ export const INITIAL_ITEMS: ItemData[] = [
     unitsPerPack: 10, 
     dailyUsage: 0, 
     isActive: false,
-    imageUrl: './assets/diaper-outer.jpg' 
+    imageUrl: 'https://images.unsplash.com/photo-1595079676339-1534801ad6cf?auto=format&fit=crop&q=80&w=200&h=200' 
   },
   { 
     id: 'diaper-inner', 
@@ -27,7 +29,7 @@ export const INITIAL_ITEMS: ItemData[] = [
     unitsPerPack: 30, 
     dailyUsage: 0, 
     isActive: false,
-    imageUrl: './assets/diaper-inner.jpg' 
+    imageUrl: 'https://images.unsplash.com/photo-1595079676339-1534801ad6cf?auto=format&fit=crop&q=80&w=200&h=200' 
   },
   { 
     id: 'diaper-pant', 
@@ -36,7 +38,7 @@ export const INITIAL_ITEMS: ItemData[] = [
     unitsPerPack: 10, 
     dailyUsage: 0, 
     isActive: false,
-    imageUrl: './assets/diaper-pant.jpg' 
+    imageUrl: 'https://images.unsplash.com/photo-1595079676339-1534801ad6cf?auto=format&fit=crop&q=80&w=200&h=200' 
   },
   { 
     id: 'mat', 
@@ -45,7 +47,7 @@ export const INITIAL_ITEMS: ItemData[] = [
     unitsPerPack: 10, 
     dailyUsage: 0, 
     isActive: false,
-    imageUrl: './assets/mat.jpg' 
+    imageUrl: 'https://images.unsplash.com/photo-1626073142207-6874550e20e8?auto=format&fit=crop&q=80&w=200&h=200' 
   },
   { 
     id: 'wipes', 
@@ -54,7 +56,7 @@ export const INITIAL_ITEMS: ItemData[] = [
     unitsPerPack: 72, 
     dailyUsage: 0, 
     isActive: false,
-    imageUrl: './assets/wipes.jpg' 
+    imageUrl: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=200&h=200' 
   },
   { 
     id: 'gloves', 
@@ -63,7 +65,7 @@ export const INITIAL_ITEMS: ItemData[] = [
     unitsPerPack: 200, 
     dailyUsage: 0, 
     isActive: false,
-    imageUrl: './assets/gloves.jpg' 
+    imageUrl: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=200&h=200' 
   },
 ];
 
